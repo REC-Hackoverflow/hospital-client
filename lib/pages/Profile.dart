@@ -9,6 +9,10 @@ class Profile extends StatelessWidget {
     return Scaffold(
         backgroundColor: AppColors.background,
         appBar: AppBar(
+          leading: IconButton(
+            icon: Icon(Icons.arrow_back),
+            onPressed: () {},
+          ),
           title: const Text('Your Profile'),
           centerTitle: true,
           backgroundColor: AppColors.primary,
