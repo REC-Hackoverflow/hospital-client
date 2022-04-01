@@ -39,7 +39,15 @@ dependencies:
 dev_dependencies:
   flutter_test:
     sdk: flutter
-
+  cupertino_icons: ^1.0.2
+  google_fonts: ^2.3.1
+  flutter_screenutil: ^5.3.1
+  firebase_core: ^1.13.1
+  firebase_auth: ^3.3.11
+  location: ^4.3.0
+  fluttertoast: ^8.0.9
+  geolocator: ^8.2.0
+  cloud_firestore: ^3.1.11
   # The "flutter_lints" package below contains a set of recommended lints to
   # encourage good coding practices. The lint set provided by the package is
   # activated in the `analysis_options.yaml` file located at the root of your
