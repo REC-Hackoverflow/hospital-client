@@ -119,7 +119,7 @@ class _LoginState extends State<Login> {
               ),
               GestureDetector(
                 onTap: () {
-                  Navigator.of(context).pushNamed('register_page');
+                  // Navigator.of(context).pushNamed('register_page');
                 },
                 child: Container(
                   padding: EdgeInsets.symmetric(vertical: 10, horizontal: 5),
