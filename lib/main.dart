@@ -1,4 +1,5 @@
 import 'package:cilent_hospital/pages/Login.dart';
+import 'package:cilent_hospital/pages/register.dart';
 import 'package:flutter/material.dart';
 
 void main() {
@@ -25,8 +26,7 @@ class MyApp extends StatelessWidget {
         // is not restarted.
         primarySwatch: Colors.blue,
       ),
-      home: const Login(),
+      home: const Register(),
     );
   }
 }
-
