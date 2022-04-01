@@ -1,3 +1,6 @@
+import 'dart:ui';
+
+import 'package:cilent_hospital/pages/register.dart';
 import 'package:cilent_hospital/pages/themes.dart';
 import 'package:flutter/material.dart';
 
@@ -119,7 +122,7 @@ class _LoginState extends State<Login> {
               ),
               GestureDetector(
                 onTap: () {
-                  // Navigator.of(context).pushNamed('register_page');
+                  Navigator.push(context, MaterialPageRoute(builder: (context)=>Register()));
                 },
                 child: Container(
                   padding: EdgeInsets.symmetric(vertical: 10, horizontal: 5),

@@ -1,3 +1,5 @@
+import 'package:cilent_hospital/pages/home.dart';
+import 'package:cilent_hospital/pages/records.dart';
 import 'package:cilent_hospital/pages/themes.dart';
 import 'package:flutter/material.dart';
 
@@ -61,7 +63,6 @@ class _RegisterState extends State<Register> {
                 height: 25,
               ),
               TextField(
-                // controller: passwordTextController,
                 obscureText: true,
                 decoration: InputDecoration(
                   border: OutlineInputBorder(
@@ -89,32 +90,13 @@ class _RegisterState extends State<Register> {
                   ),
                 ),
               ),
-              // TextField(
-              //   autofocus: true,
-              //   controller: repasswordTextController,
-              //   obscureText: true,
-              //   decoration: InputDecoration(
-              //     contentPadding: EdgeInsets.fromLTRB(0, 0, 5, 20),
-              //     border: OutlineInputBorder(
-              //         borderRadius: BorderRadius.circular(10)),
-              //     hintText: 'Re-enter password',
-              //     prefixIcon: Icon(
-              //       Icons.password,
-              //       color: AppColors.textLightMode,
-              //     ),
-              //   ),
-              // ),
               const SizedBox(
                 height: 16,
               ),
 
               GestureDetector(
                 onTap: () {
-                  // Navigator.of(context).pushNamed('location_page', arguments: {
-                  //   "name": nameTextController.text,
-                  //   "email": emailTextController.text,
-                  //   "password": passwordTextController.text
-                  // });
+                  Navigator.push(context, MaterialPageRoute(builder: (context)=>Records()));
                 },
                 child: Container(
                   padding: EdgeInsets.symmetric(vertical: 10, horizontal: 5),
@@ -139,13 +121,6 @@ class _RegisterState extends State<Register> {
               const SizedBox(
                 height: 16,
               ),
-              // Text(
-              //   error,
-              //   style: TextStyle(
-              //     color: Colors.red,
-              //   ),
-              //   textAlign: TextAlign.center,
-              // ),
             ],
           ),
         ),
